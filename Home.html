@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>B K Rakshita</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+  
+            $(".left").css("left", "-100%");
+            $(".right").css("width", "100%");
+
+            setTimeout(function () {
+                $(".left").animate({ left: "0" }, 1200);
+                $(".right").animate({ width: "50%" }, 1200);
+            }, 1500);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <h1 class="tagline">Code. Create. Innovate.</h1>
+        </div>
+
+        <div class="right">
+            <nav>
+                <a href="Home.html" class="active">Home</a>
+                <a href="Resume.html">Resume</a>
+                <a href="Biodata.html">Biodata</a>
+            </nav>
+
+            <div class="name">
+                <h1>B K Rakshita</h1>
+                <h3>B.E Computer Science (Pursuing)</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
